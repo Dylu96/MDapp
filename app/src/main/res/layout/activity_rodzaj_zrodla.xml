@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RodzajZrodla">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="354dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/logo_pp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tytulwymiarybudynku7"
+        android:layout_width="351dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center"
+        android:text="Wskaż rodzaj paliwa którym zasilane jest źródło grzewcze:"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="4dp"
+        android:text="© Copyright by Michał Dylewski 2021"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rozneRodzaje"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tytulwymiarybudynku7">
+
+        <RadioButton
+            android:id="@+id/radioPrad"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Prąd"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radioOlejOpal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Olej opałowy"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radioGazPlyn"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Gaz płynny"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radioGazZiemny"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Gaz ziemny"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radioWegielOrzech"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Węgiel orzech"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radioEkogroszek"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Węgiel ekogroszek"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radioPellet"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Pellet drzewny"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radioDrewno"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Drewno opałowe"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radioPompaPow"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Pompa ciepła powietrzna"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radioPompaGrunt"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Pompa ciepła gruntowa"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/dalejZestawienie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Dalej"
+        android:onClick="openRoczneKoszty"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/pokazRodzaj"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center|center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rozneRodzaje" />
+</androidx.constraintlayout.widget.ConstraintLayout>

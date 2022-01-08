@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dalejwodailosc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.MDApp.NoActionBar"
+    tools:context=".LiczbaMieszkancow">
+
+    <TextView
+        android:id="@+id/tytulwymiarybudynku2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center"
+        android:text="Ilość osób mieszkających w budynku:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/logo_pp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="16dp"
+        android:text="© Copyright by Michał Dylewski 2021"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <RadioGroup
+        android:id="@+id/calalista"
+        android:layout_width="200dp"
+        android:layout_height="360dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tytulwymiarybudynku2">
+
+        <RadioButton
+            android:id="@+id/listam1"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="1 osoba" />
+
+        <RadioButton
+            android:id="@+id/listam2"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="2 osoby" />
+
+        <RadioButton
+            android:id="@+id/listam3"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="3 osoby" />
+
+        <RadioButton
+            android:id="@+id/listam4"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="4 osoby" />
+
+        <RadioButton
+            android:id="@+id/listam5"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="5 osób" />
+
+        <RadioButton
+            android:id="@+id/listam6"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="6 osób" />
+
+        <RadioButton
+            android:id="@+id/listam7"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="7 osób" />
+
+        <RadioButton
+            android:id="@+id/listam8"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="8 osób" />
+
+        <RadioButton
+            android:id="@+id/listam9"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="9 osób" />
+
+        <RadioButton
+            android:id="@+id/listam10"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="10 osób" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/wyswietliczbemieszkancow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calalista" />
+
+    <Button
+        android:id="@+id/dalejIloscWody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openIloscWody"
+        android:text="Dalej"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wyswietliczbemieszkancow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

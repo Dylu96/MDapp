@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.MDApp.NoActionBar"
+    tools:context=".RodzajBudynku">
+
+    <TextView
+        android:id="@+id/wynikrodzajbudynku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/DalejLiczbaMieszkancow"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/rodzaj7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textView19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/DalejLiczbaMieszkancow"
+        app:layout_constraintTop_toTopOf="@+id/textView19"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
+    <ImageView
+        android:id="@+id/rodzaj5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textView17"
+        app:layout_constraintStart_toStartOf="@+id/rodzaj6"
+        app:layout_constraintTop_toTopOf="@+id/textView17"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
+    <ImageView
+        android:id="@+id/rodzaj6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textView18"
+        app:layout_constraintStart_toStartOf="@+id/rodzaj7"
+        app:layout_constraintTop_toTopOf="@+id/textView18"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
+    <ImageView
+        android:id="@+id/rodzaj4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="@+id/rodzaj5"
+        app:layout_constraintTop_toTopOf="@+id/textView16"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
+    <ImageView
+        android:id="@+id/rodzaj3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintStart_toStartOf="@+id/rodzaj4"
+        app:layout_constraintTop_toTopOf="@+id/textView15"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
+    <ImageView
+        android:id="@+id/rodzaj2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textView14"
+        app:layout_constraintStart_toStartOf="@+id/rodzaj3"
+        app:layout_constraintTop_toTopOf="@+id/textView14"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/logo_pp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/DalejLiczbaMieszkancow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:onClick="openLiczbaMieszkancow"
+        android:text="Dalej"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="16dp"
+        android:text="© Copyright by Michał Dylewski 2021"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/gruparodzajbudynku"
+        android:layout_width="181dp"
+        android:layout_height="348dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/wynikrodzajbudynku"
+        app:layout_constraintEnd_toStartOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/rodzajbudynku1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pasywny" />
+
+        <RadioButton
+            android:id="@+id/rodzajbudynku2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Niskoenergetyczny" />
+
+        <RadioButton
+            android:id="@+id/rodzajbudynku3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Energooszczędny" />
+
+        <RadioButton
+            android:id="@+id/rodzajbudynku4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dobrze izolowany " />
+
+        <RadioButton
+            android:id="@+id/rodzajbudynku5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Standardowo izolowany" />
+
+        <RadioButton
+            android:id="@+id/rodzajbudynku6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Słabo izolowany" />
+
+        <RadioButton
+            android:id="@+id/rodzajbudynku7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="0dp"
+            android:text="Nieocieplony" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="5-15"
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        app:layout_constraintStart_toStartOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="16-40"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="@+id/textView15"
+        app:layout_constraintStart_toStartOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="41-50"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintEnd_toEndOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="51-60"
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintEnd_toEndOf="@+id/textView17"
+        app:layout_constraintStart_toStartOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="61-90"
+        app:layout_constraintBottom_toTopOf="@+id/textView18"
+        app:layout_constraintEnd_toEndOf="@+id/textView18"
+        app:layout_constraintStart_toStartOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="91-100"
+        app:layout_constraintBottom_toTopOf="@+id/textView19"
+        app:layout_constraintEnd_toEndOf="@+id/textView19"
+        app:layout_constraintStart_toStartOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="24dp"
+        android:text="101-150"
+        app:layout_constraintBottom_toBottomOf="@+id/gruparodzajbudynku"
+        app:layout_constraintEnd_toStartOf="@+id/rodzaj7"
+        app:layout_constraintStart_toStartOf="@+id/DalejLiczbaMieszkancow" />
+
+    <ImageView
+        android:id="@+id/rodzaj1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="@+id/rodzaj2"
+        app:layout_constraintTop_toTopOf="@+id/textView13"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Rodzaj budynku:"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/gruparodzajbudynku"
+        app:layout_constraintStart_toStartOf="@+id/gruparodzajbudynku"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:text="Współczynnik \n\[kWh/m2/rok]"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/rodzaj1"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

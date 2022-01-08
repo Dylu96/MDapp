@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RoczneKoszty">
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text='Obliczenia kosztów oraz emisji mają charakter poglądowy. Jeżeli chcesz sprawdzić koszta oraz emisję przy innym rodzaju paliwa naciśnij "Cofnij".'
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/opisStandard"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/opisWoda"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opisStandard" />
+
+    <TextView
+        android:id="@+id/opisZrodlo"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opisWoda" />
+
+    <TextView
+        android:id="@+id/tytulwymiarybudynku10"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:gravity="right"
+        android:text="Emisja CO2"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tytulwymiarybudynku11" />
+
+    <TextView
+        android:id="@+id/tytulwymiarybudynku11"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="70dp"
+        android:gravity="right"
+        android:text="Koszty Roczne"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="358dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/logo_pp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tytulwymiarybudynku8"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:gravity="right"
+        android:text="Emisja CO"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tytulwymiarybudynku10" />
+
+    <TextView
+        android:id="@+id/tytulwymiarybudynku12"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:gravity="right"
+        android:text="Emisja SO2"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tytulwymiarybudynku8" />
+
+    <TextView
+        android:id="@+id/tytulwymiarybudynku13"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:gravity="right"
+        android:text="Emisja NOx"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tytulwymiarybudynku12" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="8dp"
+        android:text="© Copyright by Michał Dylewski 2021"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/caleZestawienie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Wyświetl Dane"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/wyswietlKoszty"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tytulwymiarybudynku11"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/wyswietlEmisjaCO2"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tytulwymiarybudynku10"
+        app:layout_constraintTop_toBottomOf="@+id/wyswietlKoszty" />
+
+    <TextView
+        android:id="@+id/wyswietlEmisjaCO"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tytulwymiarybudynku8"
+        app:layout_constraintTop_toBottomOf="@+id/wyswietlEmisjaCO2" />
+
+    <TextView
+        android:id="@+id/wyswietlEmisjaSO2"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tytulwymiarybudynku12"
+        app:layout_constraintTop_toBottomOf="@+id/wyswietlEmisjaCO" />
+
+    <TextView
+        android:id="@+id/wyswietlEmisjaNOx"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tytulwymiarybudynku13"
+        app:layout_constraintTop_toBottomOf="@+id/wyswietlEmisjaSO2" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="240dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Sugerowane zmiany:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tytulwymiarybudynku13" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
